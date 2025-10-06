@@ -6,14 +6,11 @@ body {
   padding: 0;
 }
 
-/* ====== CABEÇALHO ====== */
 header.inicio {
   text-align: center;
   padding: 2rem 1rem;
   position: relative;
 }
-
-/* topo do cabeçalho */
 .topo {
   display: flex;
   justify-content: space-between;
@@ -60,8 +57,6 @@ img.inicio-img {
   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
   margin-bottom: 2rem;
 }
-
-/* ====== SOBRE ====== */
 .sobre {
   max-width: 800px;
   margin: 0 auto 3rem auto;
@@ -83,8 +78,6 @@ img.inicio-img {
   text-align: justify;
   line-height: 1.5;
 }
-
-/* ====== MAIN / CARDS ====== */
 main {
   display: flex;
   flex-direction: column;
@@ -137,7 +130,6 @@ main {
   color: #c21515;
 }
 
-/* ====== RESPONSIVIDADE ====== */
 @media (max-width: 700px) {
   .topo {
     flex-direction: column;
