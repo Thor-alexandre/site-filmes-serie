@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fale de você</title>
+    <link rel="stylesheet" href="fale_de_voce.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Fale de você agora</h1>
+    </div>
+
+    <div class="menu">
+        <nav>
+            <a href="pagina_principal.html">Início</a>
+            <a href="tabela.html">tabela</a>
+        </nav>
+    </div>
+
+    <div class="conteudo">
+        <h2>Envie sua avaliação</h2>
+        <form action="#" method="post">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="preferido">Série, Anime, Desenho ou Filme preferido:</label>
+                <input type="text" id="preferido" name="preferido">
+            </div>
+
+            <div class="campo">
+                <label for="nota">Nota (0 a 10):</label>
+                <input type="number" id="nota" name="nota" min="0" max="10">
+            </div>
+
+            <div class="campo">
+                <label for="datahora">Data e hora que assistiu:</label>
+                <input type="datetime-local" id="datahora" name="datahora">
+            </div>
+
+            <div class="campo">
+                <label for="avaliacao">Avaliação (sem funcionalidade):</label>
+                <input type="range" id="avaliacao" name="avaliacao" min="0" max="100">
+            </div>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="rodape">
+        <p>Site de Avaliações</p>
+    </div>
+</body>
+</html>

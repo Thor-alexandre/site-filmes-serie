@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thor A.D.S</title>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&display=swap" rel="stylesheet"> <!--link para a pagina da fonte que sera aplicada ao site-->
-    <link href="styles.css" rel="stylesheet"> <!--link que indexa o .css ao .html-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thor A.D.S</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pagina_principal.css">
 </head>
 <body>
 
-    <header class="inicio"> <!--nessa parte eu criei a parte superior do site-->
-        <h1>Meu cantinho com animes, desenhos e series que eu mais amo</h1>
-        <p>Aqui você encontrará as minhas mídias favoritas — com nome, imagens, trailers e, claro, onde assistir. Tudo reunido em um só lugar: animes, desenhos e séries.</p>
-        <img src="img/Madoka-vs-Evangelion-header.png" class="inicio-img" alt="Capa do site">
-    </header>
+  <header class="inicio">
+    <div class="topo">
+      <div class="menu-esquerda">
+        <a href="fale_de_voce.html">Fale de você</a>
+        <a href="tabela.html">Tabela</a>
+      </div>
+      <div class="login">
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+
+    <h1>Meu cantinho com animes, desenhos e séries que eu super recomendo!</h1>
+    <p>Aqui você encontrará as minhas mídias favoritas — com nome, imagens, trailers e onde assistir. Tudo reunido em um só lugar!</p>
+    <img src="img/Madoka-vs-Evangelion-header.png" class="inicio-img" alt="Capa do site">
+    
+    <section class="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou apaixonado por animações — sejam animes, desenhos ou séries. Gosto de analisar roteiros, trilhas sonoras e estética visual.  
+      Este site é um espaço para compartilhar tudo isso e recomendar obras que realmente marcaram minha vida.</p>
+    </section>
+  </header>
 
   <main>
-     <!--todo o codigo do card, ele pode ser copiado e colado para fazer os outros varios cards-->
-     <!--card1-->
+    <!-- CARD 1 -->
     <section class="card">
-      <a href="Evangelion.html" class="card-link"> <!--nessa parte é aonde ao clicar no card ele te rerediciona a pagina referente ao card, nesse caso é a pagina do animes, desenho ou serie com tudo detalhado-->
-        <div class="card_img"> <!--nessa div com classe, serve para no css arrumar a img que esta no card com a devida formatação-->
-          <img src="img\eva.png" alt="Card imagem">
-        </div>  
-        <div class="info"> <!--aqui é a div com a classe para deixar as informações escritas do card formatado-->
-          <h2>Neon Genesis Evangelion (anime) <spam class="ano">1998</spam></h2>
-          <p>Um mundo pós-apocalíptico causado pela ignorância humana</p>
+      <a href="Evangelion.html" class="card-link">
+        <div class="card_img">
+          <img src="img/eva.png" alt="Card imagem">
+        </div>
+        <div class="info">
+          <h2>Neon Genesis Evangelion (anime) <span class="ano">1998</span></h2>
+          <p>Um mundo pós-apocalíptico causado pela ignorância humana.</p>
         </div>
       </a>
     </section>
 
-    <!--card2-->
-     <section class="card">
-      <a href="Madoka.html" class="card-link"> <!--nessa parte é aonde ao clicar no card ele te rerediciona a pagina referente ao card, nesse caso é a pagina do animes, desenho ou serie com tudo detalhado-->
-        <div class="card_img"> <!--nessa div com classe, serve para no css arrumar a img que esta no card com a devida formatação-->
-          <img src="img\Magical_Girls.png" alt="Card imagem">
-        </div>  
-        <div class="info"> <!--aqui é a div com a classe para deixar as informações escritas do card formatado-->
-          <h2>Puella Magi Madoka Magica (anime) <spam class="ano">2011</spam></h2>
-          <p>História de Madoka Kaname, uma estudante que pode se tornar uma garota mágica ao fazer um desejo, em troca de lutar contra as "bruxas"</p>
+    <!-- CARD 2 -->
+    <section class="card">
+      <a href="Madoka.html" class="card-link">
+        <div class="card_img">
+          <img src="img/Magical_Girls.png" alt="Card imagem">
+        </div>
+        <div class="info">
+          <h2>Puella Magi Madoka Magica (anime) <span class="ano">2011</span></h2>
+          <p>A história de Madoka Kaname, uma estudante que pode se tornar uma garota mágica ao fazer um desejo.</p>
         </div>
       </a>
     </section>
 
-    <!--card3-->
-     <section class="card">
-      <a href="avatar.html" class="card-link"> <!--nessa parte é aonde ao clicar no card ele te rerediciona a pagina referente ao card, nesse caso é a pagina do animes, desenho ou serie com tudo detalhado-->
-        <div class="card_img"> <!--nessa div com classe, serve para no css arrumar a img que esta no card com a devida formatação-->
-          <img src="img\avatar.png" alt="Card imagem">
-        </div>  
-        <div class="info"> <!--aqui é a div com a classe para deixar as informações escritas do card formatado-->
-          <h2>Avatar: A Lenda de Aang (desenho) <spam class="ano">2005</spam></h2>
-          <p>O jovem Aang, o último dominador de ar, é descoberto preso no gelo após 100 anos e descobre ter o destino de ser o Avata</p>
+    <!-- CARD 3 -->
+    <section class="card">
+      <a href="avatar.html" class="card-link">
+        <div class="card_img">
+          <img src="img/avatar.png" alt="Card imagem">
+        </div>
+        <div class="info">
+          <h2>Avatar: A Lenda de Aang (desenho) <span class="ano">2005</span></h2>
+          <p>O jovem Aang, o último dominador de ar, é descoberto preso no gelo após 100 anos e precisa restaurar o equilíbrio do mundo.</p>
         </div>
       </a>
     </section>
-
-
   </main>
+
 </body>
 </html>
