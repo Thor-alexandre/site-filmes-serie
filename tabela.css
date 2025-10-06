@@ -92,8 +92,8 @@ body {
 }
 
 .titulo-img img {
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
