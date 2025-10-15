@@ -1,0 +1,635 @@
+/* Reset e configurações globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Geologica", sans-serif;
+}
+
+/* Corpo da página de login */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+/* Botão de voltar ao início */
+.botao-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  background-color: #1f1f1f;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.botao-voltar:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Caixa do formulário */
+.caixa-formulario {
+  width: 320px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Título e rótulos */
+.caixa-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+.caixa-formulario label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+/* Campos de entrada */
+.caixa-formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.caixa-formulario input:focus {
+  border-color: #888;
+  background-color: #333;
+}
+
+/* Botão de envio */
+.caixa-formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2c2c2c;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.caixa-formulario button:hover {
+  background: #3a3a3a;
+}
+
+
+
+/* ============================================================
+   ===== PÁGINA PRINCIPAL =====
+   Estilos da página inicial com cards de recomendações
+   ============================================================ */
+
+body {
+  font-family: 'Geologica', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho e menu superior */
+header.inicio {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.menu-esquerda a,
+.login a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.menu-esquerda a:hover,
+.login a:hover {
+  color: rgb(233, 225, 116);
+  text-shadow: 0 0 8px rgb(233, 225, 116);
+}
+
+/* Texto do cabeçalho */
+header.inicio h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: rgb(233, 225, 116);
+}
+header.inicio p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagem de destaque */
+img.inicio-img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+/* Seção "Sobre mim" */
+.sobre {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+.sobre h2 {
+  color: rgb(233, 225, 116);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.sobre p {
+  color: #ccc;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Cards principais */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.card-link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.8);
+}
+.card_img img {
+  width: 220px;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Informações do card */
+.info {
+  flex: 1;
+}
+.info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.info p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+.ano {
+  font-size: 1rem;
+  color: #c21515;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .topo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-link {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card_img img {
+    width: 80%;
+  }
+}
+
+
+
+/* ============================================================
+   ===== TABELA =====
+   Estilos da página de listagem de séries/animes
+   ============================================================ */
+
+/* Estrutura geral */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho da tabela */
+.cabecalho {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Menu de navegação */
+.menu {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+.menu a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* Conteúdo e tabela */
+.conteudo {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.conteudo h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Tabela em si */
+.tabela-series {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.tabela-series thead {
+  background-color: #333;
+  text-transform: uppercase;
+}
+.tabela-series th, 
+.tabela-series td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+.tabela-series th {
+  font-weight: bold;
+  color: #fff;
+}
+.tabela-series tr:hover {
+  background-color: #383838;
+  transition: background 0.3s ease;
+}
+.tabela-series tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Imagens na tabela */
+.titulo-img {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.titulo-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.titulo-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade da tabela */
+@media (max-width: 700px) {
+  .tabela-series thead {
+    display: none;
+  }
+  .tabela-series, 
+  .tabela-series tbody, 
+  .tabela-series tr, 
+  .tabela-series td {
+    display: block;
+    width: 100%;
+  }
+  .tabela-series tr {
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+  }
+  .tabela-series td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .tabela-series td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    color: #bbb;
+    margin-bottom: 5px;
+  }
+  .titulo-img img {
+    width: 40px;
+    height: 55px;
+  }
+}
+
+
+
+/* ============================================================
+   ===== FALE DE VOCÊ =====
+   Estilos da página de formulário de avaliação
+   ============================================================ */
+
+/* Estrutura geral */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: "Geologica", sans-serif;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Menu */
+.menu {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+.menu a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #fff;
+}
+
+/* Conteúdo e formulário */
+.conteudo {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+.conteudo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Campos e rótulos */
+.campo {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ddd;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+}
+input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+/* Botões */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 48%;
+}
+button:hover {
+  background-color: #555;
+}
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+/* ============================================================
+   ===== PÁGINA DE MÍDIA MODERNA =====
+   Inspirada no estilo do Filmow
+   ============================================================ */
+
+   .pagina-midia {
+  max-width: 1100px;
+  margin: 40px auto;
+  color: #f0f0f0;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+/* BLOCO SUPERIOR — imagem + informações */
+.bloco-superior {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+/* Poster à esquerda */
+.poster-midia {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.poster-midia img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/* Botão principal */
+.poster-midia .assistir {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #c21515;
+  color: #fff;
+  transition: 0.3s;
+}
+.poster-midia .assistir:hover {
+  background-color: #e52525;
+}
+
+/* Área de informações e sinopse à direita */
+.info-com-sinopse {
+  flex: 2;
+  min-width: 300px;
+}
+.info-com-sinopse h2 {
+  color: rgb(233, 225, 116);
+  margin-bottom: 0.4rem;
+}
+.genero {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.avaliacoes {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.nota-media {
+  font-weight: bold;
+  color: #f5c518;
+}
+.avaliacao-pessoal {
+  color: #ccc;
+}
+
+/* Lista técnica */
+.info-tecnica {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.info-tecnica li {
+  margin-bottom: 6px;
+}
+
+/* Sinopse (ao lado direito) */
+.sinopse-lateral h2 {
+  color: rgb(233, 225, 116);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+.sinopse-lateral p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #ddd;
+}
+
+/* Trailer e Avaliação */
+.trailer, .avaliacao {
+  margin-top: 2rem;
+}
+.trailer h2, .avaliacao h2 {
+  color: rgb(233, 225, 116);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+.trailer iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.avaliacao p {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .bloco-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poster-midia {
+    max-width: 80%;
+  }
+}
