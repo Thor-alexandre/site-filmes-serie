@@ -633,3 +633,22 @@ button:hover {
     max-width: 80%;
   }
 }
+.botoes-assistir {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.assistir {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.assistir:hover {
+  background-color: #b00610;
+}
