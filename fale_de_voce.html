@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cabecalho">
-        <h1>Fale de você agora</h1>
+  <header class="header-moderno">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo" class="header-logo-img">
+      <a href="pagina_principal.html" class="logo">Thor A.D.S</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="pagina_principal.html">Início</a></li>
+          <li><a href="favoritos.html">Meus Favoritos</a></li>
+          <li><a href="fale_de_voce.html">Fale de você</a></li>
+          <li><a href="tabela.html">Tabela</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="menu">
-        <nav>
-            <a href="pagina_principal.html">Início</a>
-            <a href="tabela.html">tabela</a>
-        </nav>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle-button">🌞</button>
+      <a href="login.html" class="login-button">Login</a>
     </div>
+  </header>
 
+  <main>
+    <h1>Envie sua avaliação</h1>
     <div class="conteudo">
-        <h2>Envie sua avaliação</h2>
         <form action="#" method="post">
             <div class="campo">
                 <label for="nome">Nome:</label>
@@ -52,9 +61,11 @@
             </div>
         </form>
     </div>
+  </main>
 
-    <div class="rodape">
-        <p>Site de Avaliações</p>
-    </div>
+    <footer>
+    <p>Todos os direitos reservados. <span id="current-time"></span></p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

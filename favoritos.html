@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Favoritos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header-moderno">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo" class="header-logo-img">
+      <a href="pagina_principal.html" class="logo">Thor A.D.S</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="pagina_principal.html">Início</a></li>
+          <li><a href="favoritos.html">Meus Favoritos</a></li>
+          <li><a href="fale_de_voce.html">Fale de você</a></li>
+          <li><a href="tabela.html">Tabela</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle-button">🌞</button>
+      <a href="login.html" class="login-button">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Meus Cards Favoritos</h1>
+
+    <section class="category-section">
+      <h2>Animes</h2>
+      <!-- CARD 1 -->
+      <section class="card">
+        <a href="Evangelion.html" class="card-link">
+          <div class="card_img">
+            <img src="img\eva_main.png" alt="Card imagem">
+          </div>
+          <div class="info">
+            <h2>Neon Genesis Evangelion (anime) <span class="ano">1998</span></h2>
+            <p>Um mundo pós-apocalíptico causado pela ignorância humana.</p>
+          </div>
+        </a>
+      </section>
+
+      <!-- CARD 2 -->
+      <section class="card">
+        <a href="Madoka.html" class="card-link">
+          <div class="card_img">
+            <img src="img/Magical_Girls.png" alt="Card imagem">
+          </div>
+          <div class="info">
+            <h2>Puella Magi Madoka Magica (anime) <span class="ano">2011</span></h2>
+            <p>A história de Madoka Kaname, uma estudante que pode se tornar uma garota mágica ao fazer um desejo, em troca de lutar contra as "bruxas.</p>
+          </div>
+        </a>
+      </section>
+    </section>
+
+    <section class="category-section">
+      <h2>Desenhos</h2>
+      <!-- CARD 3 -->
+      <section class="card">
+        <a href="avatar.html" class="card-link">
+          <div class="card_img">
+            <img src="img/avatar.png" alt="Card imagem">
+          </div>
+          <div class="info">
+            <h2>Avatar: A Lenda de Aang (desenho) <span class="ano">2005</span></h2>
+            <p>O jovem Aang, o último dominador de air, é descoberto preso no gelo após 100 anos e precisa restaurar o equilíbrio do mundo.</p>
+          </div>
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos os direitos reservados. <span id="current-time"></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -6,99 +6,6 @@
   font-family: "Geologica", sans-serif;
 }
 
-/* Corpo da página de login */
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding-top: 60px;
-}
-
-/* Botão de voltar ao início */
-.botao-voltar {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-decoration: none;
-  color: #ccc;
-  background-color: #1f1f1f;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-.botao-voltar:hover {
-  background-color: #2a2a2a;
-  color: #fff;
-}
-
-/* Caixa do formulário */
-.caixa-formulario {
-  width: 320px;
-  background-color: #1e1e1e;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
-}
-
-/* Título e rótulos */
-.caixa-formulario h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #f5f5f5;
-}
-.caixa-formulario label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #ccc;
-}
-
-/* Campos de entrada */
-.caixa-formulario input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background-color: #2a2a2a;
-  color: #f0f0f0;
-  outline: none;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-.caixa-formulario input:focus {
-  border-color: #888;
-  background-color: #333;
-}
-
-/* Botão de envio */
-.caixa-formulario button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background: #2c2c2c;
-  color: #f5f5f5;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s ease;
-}
-.caixa-formulario button:hover {
-  background: #3a3a3a;
-}
-
-
-
-/* ============================================================
-   ===== PÁGINA PRINCIPAL =====
-   Estilos da página inicial com cards de recomendações
-   ============================================================ */
-
 body {
   font-family: 'Geologica', sans-serif;
   background-color: #000;
@@ -107,77 +14,99 @@ body {
   padding: 0;
 }
 
-/* Cabeçalho e menu superior */
-header.inicio {
-  text-align: center;
-  padding: 2rem 1rem;
-  position: relative;
+/* Estilos para o h1 da página principal */
+.main-title {
+  color: yellow;
 }
-.topo {
+
+/* Estilos para o cabeçalho moderno */
+.header-moderno {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
-.menu-esquerda a,
-.login a {
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.header-moderno .logo {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
-.menu-esquerda a:hover,
-.login a:hover {
-  color: rgb(233, 225, 116);
-  text-shadow: 0 0 8px rgb(233, 225, 116);
+
+.main-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
 }
 
-/* Texto do cabeçalho */
-header.inicio h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  color: rgb(233, 225, 116);
-}
-header.inicio p {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 1.5rem;
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
-/* Imagem de destaque */
-img.inicio-img {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
-  margin-bottom: 2rem;
+.theme-toggle-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
 }
 
-/* Seção "Sobre mim" */
-.sobre {
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  background-color: #111;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+.theme-toggle-button:hover {
+  background-color: #555;
 }
-.sobre h2 {
-  color: rgb(233, 225, 116);
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
 }
-.sobre p {
-  color: #ccc;
-  text-align: justify;
-  line-height: 1.5;
+
+.login-button:hover {
+  background-color: #0056b3;
 }
 
 /* Cards principais */
@@ -228,66 +157,240 @@ main {
   color: #c21515;
 }
 
-/* Responsividade */
-@media (max-width: 700px) {
-  .topo {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .card-link {
-    flex-direction: column;
-    text-align: center;
-  }
-  .card_img img {
-    width: 80%;
-  }
+/* Seção "Sobre mim" */
+.sobre {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
 }
-
-
-
-/* ============================================================
-   ===== TABELA =====
-   Estilos da página de listagem de séries/animes
-   ============================================================ */
-
-/* Estrutura geral */
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #121212;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-
-/* Cabeçalho da tabela */
-.cabecalho {
-  background-color: #1e1e1e;
-  text-align: center;
-  padding: 20px;
+.sobre h2 {
+  color: rgb(233, 225, 116);
   border-bottom: 1px solid #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-
-/* Menu de navegação */
-.menu {
-  background-color: #1a1a1a;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #333;
-}
-.menu a {
+.sobre p {
   color: #ccc;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.menu a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #fff;
+  text-align: justify;
+  line-height: 1.5;
 }
 
-/* Conteúdo e tabela */
+/* Imagem de destaque */
+img.inicio-img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+/* Estilos para o tema claro */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.light-mode .header-moderno {
+  background-color: #ffffff;
+  border-bottom-color: #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .header-moderno .logo {
+  color: #333;
+}
+
+body.light-mode .main-nav a {
+  color: #666;
+}
+
+body.light-mode .main-nav a:hover {
+  color: #000;
+  text-shadow: none;
+}
+
+body.light-mode .theme-toggle-button {
+  background-color: #eee;
+  color: #333;
+}
+
+body.light-mode .theme-toggle-button:hover {
+  background-color: #ddd;
+}
+
+body.light-mode .login-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+body.light-mode main .main-title {
+  color: yellow;
+}
+
+body.light-mode section.sobre {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode section.sobre h2 {
+  color: #333;
+  border-bottom-color: #eee;
+}
+
+body.light-mode section.sobre p {
+  color: #555;
+}
+
+body.light-mode .card-link {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .card-link:hover {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .info h2 {
+  color: #333;
+}
+
+body.light-mode .info p {
+  color: #666;
+}
+
+body.light-mode footer {
+  background-color: #ffffff;
+  color: #666;
+  border-top-color: #ddd;
+}
+
+/* Estilos para login.html */
+.caixa-formulario {
+  width: 320px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+.caixa-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+.caixa-formulario label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.caixa-formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.caixa-formulario input:focus {
+  border-color: #888;
+  background-color: #333;
+}
+
+.caixa-formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2c2c2c;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.caixa-formulario button:hover {
+  background: #3a3a3a;
+}
+
+body.light-mode .caixa-formulario {
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .caixa-formulario h2 {
+  color: #333;
+}
+
+body.light-mode .caixa-formulario label {
+  color: #555;
+}
+
+body.light-mode .caixa-formulario input {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+  color: #333;
+}
+
+body.light-mode .caixa-formulario input:focus {
+  border-color: #aaa;
+  background-color: #fff;
+}
+
+body.light-mode .caixa-formulario button {
+  background: #007bff;
+  color: #fff;
+}
+
+body.light-mode .caixa-formulario button:hover {
+  background: #0056b3;
+}
+
+.botao-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  background-color: #1f1f1f;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.botao-voltar:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+body.light-mode .botao-voltar {
+  color: #555;
+  background-color: #f0f0f0;
+}
+
+body.light-mode .botao-voltar:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Estilos para tabela.html */
 .conteudo {
   max-width: 900px;
   margin: 40px auto;
@@ -303,7 +406,6 @@ body {
   padding-bottom: 10px;
 }
 
-/* Tabela em si */
 .tabela-series {
   width: 100%;
   border-collapse: collapse;
@@ -334,7 +436,6 @@ body {
   border-bottom: none;
 }
 
-/* Imagens na tabela */
 .titulo-img {
   display: flex;
   align-items: center;
@@ -352,7 +453,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Responsividade da tabela */
 @media (max-width: 700px) {
   .tabela-series thead {
     display: none;
@@ -388,64 +488,43 @@ body {
   }
 }
 
-
-
-/* ============================================================
-   ===== FALE DE VOCÊ =====
-   Estilos da página de formulário de avaliação
-   ============================================================ */
-
-/* Estrutura geral */
-body {
-  background-color: #121212;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  font-family: "Geologica", sans-serif;
+body.light-mode .conteudo {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho */
-.cabecalho {
-  background-color: #1e1e1e;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid #333;
+body.light-mode .conteudo h2 {
+  color: #333;
+  border-bottom-color: #eee;
 }
 
-/* Menu */
-.menu {
-  background-color: #1a1a1a;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #333;
-}
-.menu a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 15px;
-  transition: 0.3s;
-}
-.menu a:hover {
-  color: #fff;
+body.light-mode .tabela-series {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Conteúdo e formulário */
-.conteudo {
-  max-width: 600px;
-  margin: 40px auto;
-  background-color: #1e1e1e;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
-}
-.conteudo h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 10px;
+body.light-mode .tabela-series thead {
+  background-color: #eee;
 }
 
-/* Campos e rótulos */
+body.light-mode .tabela-series th {
+  color: #333;
+}
+
+body.light-mode .tabela-series td {
+  border-bottom-color: #eee;
+  color: #555;
+}
+
+body.light-mode .tabela-series tr:hover {
+  background-color: #f0f0f0;
+}
+
+body.light-mode .tabela-series td::before {
+  color: #888;
+}
+
+/* Estilos para fale_de_voce.html */
 .campo {
   margin-bottom: 20px;
 }
@@ -468,7 +547,6 @@ input:focus {
   border-color: #888;
 }
 
-/* Botões */
 button {
   background-color: #333;
   color: #fff;
@@ -487,13 +565,82 @@ button:hover {
   justify-content: space-between;
 }
 
-/* Rodapé */
-.rodape {
-  background-color: #1e1e1e;
+body.light-mode .campo label {
+  color: #555;
+}
+
+body.light-mode .campo input, body.light-mode .campo textarea, body.light-mode .campo select {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+  color: #333;
+}
+
+body.light-mode .campo input:focus {
+  border-color: #aaa;
+}
+
+body.light-mode .botoes button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+body.light-mode .botoes button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Centraliza o conteúdo da main na página principal */
+main {
   text-align: center;
-  padding: 15px;
-  border-top: 1px solid #333;
-  margin-top: 40px;
+  max-width: 900px; /* Limita a largura para melhor visualização */
+  margin: 0 auto; /* Centraliza o bloco */
+}
+
+main p {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+
+
+/* Estilos para centralizar a página de login */
+body.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0; /* Remove padding-top para centralização total */
+}
+
+body.login-page .caixa-formulario {
+  margin: auto; /* Centraliza o formulário */
+}
+
+body.login-page .botao-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+
+/* Estilos para a página de cards */
+.category-section {
+  text-align: center; /* Centraliza o conteúdo da seção */
+  margin-bottom: 2rem;
+}
+
+.category-section h2 {
+  color: yellow; /* Colore o título da categoria de amarelo */
+  margin-bottom: 1.5rem;
+}
+
+
+.category-section .card {
+  margin: 0 auto 1.5rem auto; /* Centraliza os cards dentro da seção */
+  max-width: 600px; /* Limita a largura dos cards para centralização */
 }
 
 /* ============================================================
@@ -501,7 +648,7 @@ button:hover {
    Inspirada no estilo do Filmow
    ============================================================ */
 
-   .pagina-midia {
+.pagina-midia {
   max-width: 1100px;
   margin: 40px auto;
   color: #f0f0f0;

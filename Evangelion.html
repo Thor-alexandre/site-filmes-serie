@@ -9,19 +9,27 @@
 </head>
 <body>
 
-  <header class="cabecalho">
-    <h1>Neon Genesis Evangelion</h1>
+  <header class="header-moderno">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo" class="header-logo-img">
+      <a href="pagina_principal.html" class="logo">Thor A.D.S</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="pagina_principal.html">Início</a></li>
+          <li><a href="favoritos.html">Meus Favoritos</a></li>
+          <li><a href="fale_de_voce.html">Fale de você</a></li>
+          <li><a href="tabela.html">Tabela</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle-button">🌞</button>
+      <a href="login.html" class="login-button">Login</a>
+    </div>
   </header>
 
-  <div class="menu">
-    <nav>
-      <a href="pagina_principal.html">Início</a>
-      <a href="tabela.html">Tabela</a>
-      <a href="fale_de_voce.html">Fale de Você</a>
-    </nav>
-  </div>
-
   <main class="pagina-midia">
+    <h1>Neon Genesis Evangelion</h1>
 
     <!-- ===== BLOCO SUPERIOR ===== -->
     <section class="bloco-superior">
@@ -80,9 +88,10 @@
 
   </main>
 
-  <footer class="rodape">
-    <p>PH</p>
+  <footer>
+    <p>Todos os direitos reservados. <span id="current-time"></span></p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

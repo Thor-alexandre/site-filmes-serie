@@ -7,63 +7,78 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cabecalho">
+  <header class="header-moderno">
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo" class="header-logo-img">
+      <a href="pagina_principal.html" class="logo">Thor A.D.S</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="pagina_principal.html">Início</a></li>
+          <li><a href="favoritos.html">Meus Favoritos</a></li>
+          <li><a href="fale_de_voce.html">Fale de você</a></li>
+          <li><a href="tabela.html">Tabela</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle-button">🌞</button>
+      <a href="login.html" class="login-button">Login</a>
+    </div>
+  </header>
+
+  <main>
     <h1>Minhas Séries Favoritas</h1>
-  </div>
+    <div class="conteudo">
+      <h2>Lista de Séries</h2>
 
-  <div class="menu">
-    <nav>
-      <a href="pagina_principal.html">Início</a>
-      <a href="fale_de_voce.html">Sobre você</a>
-    </nav>
-  </div>
+      <table class="tabela-series">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
 
-  <div class="conteudo">
-    <h2>Lista de Séries</h2>
+          <tr>
+            <td class="titulo-img">
+              <img src="img\eva_tabela.png" alt="Neon Genesis Evangelion">
+              <span>Neon Genesis Evangelion</span>
+            </td>
+            <td>1998</td>
+            <td>Anime/ Mech/ Ficção Científica/ Drama Psicológico</td>
+            <td>10</td>
+          </tr>
 
-    <table class="tabela-series">
-      <thead>
-        <tr>
-          <th>Título</th>
-          <th>Ano</th>
-          <th>Gênero</th>
-          <th>Nota</th>
-        </tr>
-      </thead>
-      <tbody>
+          <tr>
+            <td class="titulo-img">
+              <img src="img\madoka_tabela.png" alt="Puella Magi Madoka Magica">
+              <span>Puella Magi Madoka Magica</span>
+            </td>
+            <td>2011</td>
+            <td>Anime/ Mahō shōjo/ Ficção/ Suspense Psicológico/ Romance/ Terror</td>
+            <td>10</td>
+          </tr>
 
-        <tr>
-          <td class="titulo-img">
-            <img src="img\eva_tabela.png" alt="Neon Genesis Evangelion">
-            <span>Neon Genesis Evangelion</span>
-          </td>
-          <td>1998</td>
-          <td>Anime/ Mech/ Ficção Científica/ Drama Psicológico</td>
-          <td>10</td>
-        </tr>
+          <tr>
+            <td class="titulo-img">
+              <img src="img\avatar_tabela.png" alt="Avatar">
+              <span>Avatar: A lenda de Aang</span>
+            </td>
+            <td>2005</td>
+            <td>Desenho/ Aventura/ Fantasia/ Comedia/ Ação</td>
+            <td>10</td>
 
-        <tr>
-          <td class="titulo-img">
-            <img src="img\madoka_tabela.png" alt="Puella Magi Madoka Magica">
-            <span>Puella Magi Madoka Magica</span>
-          </td>
-          <td>2011</td>
-          <td>Anime/ Mahō shōjo/ Ficção/ Suspense Psicológico/ Romance/ Terror</td>
-          <td>10</td>
-        </tr>
-
-        <tr>
-          <td class="titulo-img">
-            <img src="img\avatar_tabela.png" alt="Avatar">
-            <span>Avatar: A lenda de Aang</span>
-          </td>
-          <td>2005</td>
-          <td>Desenho/ Aventura/ Fantasia/ Comedia/ Ação</td>
-          <td>10</td>
-
-        </tr>
-      </tbody>
-    </table>
-  </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>Todos os direitos reservados. <span id="current-time"></span></p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
